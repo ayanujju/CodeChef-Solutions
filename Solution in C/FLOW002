@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main()
+{
+    int t,a,b,i;
+    scanf("%d",&t);
+    if(t>=1&&t<=1000){
+    for(i=0;i<t;i++){
+        scanf("%d %d\n", &a, &b);
+        if((a>=1&&a<=10000)&&(b>=1&&b<=10000)){
+            printf("%d\n",a%b);}}
+        }
+    
+}
