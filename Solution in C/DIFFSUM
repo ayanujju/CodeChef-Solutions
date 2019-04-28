@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+int i,j,k,l;
+scanf("%d%d",&i,&j);
+k=i-j;
+l=i+j;
+if(i>=-1000&&i<=1000)
+if(j>=-1000&&j<=1000)
+if(i>j)
+{
+printf("%d",k);
+}
+else
+{
+printf("%d",l);
+}
+
+return 0;
+}
