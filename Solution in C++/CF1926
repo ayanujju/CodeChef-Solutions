@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int t;
+    cin >>t;
+    while(t--){
+        int n,i,c1=0,c2=0;
+        cin >> n;
+        int a[n];
+        for(i=0;i<n;i++){
+            cin >> a[i];
+            if(a[i]==0)
+                c1++;
+            if(a[i]==1)
+                c2++;
+        }
+        if(c1<c2)
+            cout << "PUB-G" << endl;
+        else if(c1>c2)
+            cout << "Fortnite" << endl;
+        else
+            cout << "fifty-fifty" << endl;
+    }
+}
