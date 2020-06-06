@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        string str;
+        cin >> str;
+        int result=0;
+        for(int i=0;i<str.size()-1;i++)
+        {
+            if(str.size()==1) 
+                break;
+            if(str[i]!=str[i+1])
+            {
+                result++;
+                i++;
+            }
+            
+        }
+        cout << result << "\n";
+    }
+	return 0;
+}
