@@ -1,0 +1,47 @@
+#include<iostream>
+#define long long int int
+using namespace std;
+
+int ds(int n)
+{
+    int digitsum=0;
+    while(n!=0)
+    {
+        digitsum+=n%10;
+        n=n/10;
+    }
+    return digitsum;
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        int n;
+        cin >> n;
+        int wc=0,wm=0;
+        while(n--)
+        {
+            int a,b;
+            cin >> a >> b;
+            if(ds(a)>ds(b))
+                wc++;
+            else if(ds(a)<ds(b))
+                wm++;
+            else
+            {
+                wc++;
+                wm++;
+            }
+        }
+        if(wc>wm)
+            cout << 0 << " " << wc << "\n";
+        else if(wc<wm)
+            cout << 1 << " " << wm << "\n"; 
+        else
+            cout << 2 << " " << wc << "\n";
+    }
+    return 0;
+}
