@@ -1,0 +1,23 @@
+//Question link: https://www.codechef.com/problems/SUBALGO
+
+//Solution:
+
+#include <iostream>
+#define long long int
+using namespace std;
+
+int main() {
+	int n,a;
+	cin >> n >> a;
+	while(a--)
+	{
+	    if(n%10==0)
+	        n=n/10;
+	    else
+	    {
+	        n=(((n/10)*10)+((n%10)-1));
+	    }
+	}
+	cout << n;
+	return 0;
+}
